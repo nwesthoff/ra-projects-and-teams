@@ -28,7 +28,13 @@ const DefaultLayout = (frontMatter: FrontMatter) => {
           <PageIntroduction>
             <h1>Managing Projects & Teams</h1>
             <p>{frontMatter.introduction}</p>
-            <p style={{ fontSize: ".8em", border: "none" }}>
+            <p
+              style={{
+                fontSize: ".8em",
+                border: "none",
+                fontFamily: "IBM Plex Mono",
+              }}
+            >
               BY{" "}
               <NameLink href="https://nilswesthoff/com" target="blank">
                 NILS WESTHOFF

@@ -4,7 +4,7 @@ export const theme = {
     secondary: "#3BC5FF",
     tertiary: "#24C1E0",
     background: "#111",
-    text: "#ccc",
+    text: "#ddd",
   },
   breakpoints: {
     phone: 480,
