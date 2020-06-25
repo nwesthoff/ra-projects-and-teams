@@ -6,11 +6,12 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: 'IBM Plex Sans', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
   }
 
   body {
     color: white;
-    background-color: #111;
+    background-color: ${theme.colors.background};
     margin: 0;
     padding: 0;
     font-size: 1.2rem;

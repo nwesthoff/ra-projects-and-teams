@@ -2,12 +2,15 @@ import styled from "styled-components";
 import { theme } from "../config/theme";
 
 const PageIntroduction = styled.div`
-  width: 1200px;
-  max-width: 100%;
+  && {
+    width: 100%;
+    max-width: 1200px;
+  }
 
   h1 {
     font-size: 6rem;
     line-height: 1em;
+    max-width: 780px;
   }
 
   p {

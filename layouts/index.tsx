@@ -1,12 +1,11 @@
 import Layout from "../components/Layout";
 import PageIntroduction from "../components/PageIntroduction";
-import { PageWrapper } from "../components/PageWrapper";
 import { theme } from "../config/theme";
 import styled from "styled-components";
-import ContentContainer from "../components/ContentContainer";
 import References from "../components/Bibliography/References";
 import { FrontMatter } from "../interfaces";
 import { ReactNodeArray } from "react";
+import MainContent from "../components/MainContent";
 
 const NameLink = styled.a`
   text-decoration: none;
@@ -25,7 +24,7 @@ const DefaultLayout = (frontMatter: FrontMatter) => {
   return ({ children }: LayoutProps) => {
     return (
       <Layout title={frontMatter.title}>
-        <PageWrapper>
+        <MainContent>
           <PageIntroduction>
             <h1>Managing Projects & Teams</h1>
             <p>{frontMatter.introduction}</p>
@@ -40,8 +39,8 @@ const DefaultLayout = (frontMatter: FrontMatter) => {
               </span>
             </p>
           </PageIntroduction>
-          <ContentContainer>{children}</ContentContainer>
-        </PageWrapper>
+          {children}
+        </MainContent>
         <References />
       </Layout>
     );

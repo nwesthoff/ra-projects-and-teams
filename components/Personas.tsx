@@ -5,14 +5,21 @@ import Flickity from "react-flickity-component";
 import PersonaCard from "./PersonaCard";
 
 const PersonaComponentWrapper = styled.div`
+  && {
+    width: 100%;
+    max-width: 100%;
+  }
   overflow: hidden;
   color: black;
-  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background: linear-gradient(#222, #000, #222);
+  background: linear-gradient(
+    ${theme.colors.background},
+    #000,
+    ${theme.colors.background}
+  );
 
   @media (max-width: ${theme.breakpoints.phone}px) {
     padding: 0;

@@ -3,7 +3,7 @@ export const theme = {
     primary: "#0048ff",
     secondary: "#3BC5FF",
     tertiary: "#24C1E0",
-    backgroundDark: "#222",
+    background: "#111",
     text: "#ccc",
   },
   breakpoints: {
