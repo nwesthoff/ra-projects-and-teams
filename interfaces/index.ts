@@ -5,6 +5,12 @@
 // import User from 'path/to/interfaces';
 
 export type User = {
-  id: number
-  name: string
-}
+  id: number;
+  name: string;
+};
+
+export type FrontMatter = {
+  title?: string;
+  introduction?: string;
+  wordcount?: number;
+};

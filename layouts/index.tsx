@@ -4,8 +4,10 @@ import { PageWrapper } from "../components/PageWrapper";
 import { theme } from "../config/theme";
 import styled from "styled-components";
 import ContentContainer from "../components/ContentContainer";
-import Citation from "../components/Bibliography/Citation";
 import References from "../components/Bibliography/References";
+import { FrontMatter } from "../interfaces";
+import { ReactNodeArray } from "react";
+
 const NameLink = styled.a`
   text-decoration: none;
   color: ${theme.colors.primary};
@@ -15,8 +17,12 @@ const NameLink = styled.a`
   }
 `;
 
-const IndexPage = (frontMatter) => {
-  return ({ children: content }) => {
+interface LayoutProps {
+  children: ReactNodeArray;
+}
+
+const DefaultLayout = (frontMatter: FrontMatter) => {
+  return ({ children }: LayoutProps) => {
     return (
       <Layout title={frontMatter.title}>
         <PageWrapper>
@@ -30,11 +36,11 @@ const IndexPage = (frontMatter) => {
               </NameLink>{" "}
               <br />
               <span style={{ opacity: 0.5 }}>
-                JUNE 2020 | WORD COUNT: FIXME:
+                JUNE 2020 | WORD COUNT: {frontMatter.wordcount}
               </span>
             </p>
           </PageIntroduction>
-          <ContentContainer>{content}</ContentContainer>
+          <ContentContainer>{children}</ContentContainer>
         </PageWrapper>
         <References />
       </Layout>
@@ -42,4 +48,4 @@ const IndexPage = (frontMatter) => {
   };
 };
 
-export default IndexPage;
+export default DefaultLayout;
