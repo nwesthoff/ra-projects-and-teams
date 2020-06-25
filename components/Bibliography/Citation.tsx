@@ -61,7 +61,7 @@ export default function Citation({
     <CitationStyled>
       <TooltipWrapper
         data-tip={currentRef.entryTags.inBib}
-        href={`/chapters/5-conclusion#ref-${currentRef.citationKey}`}
+        href={`#ref-${currentRef.citationKey}`}
       >
         {isComponentMounted ? (
           <StyledReactTooltip
