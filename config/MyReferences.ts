@@ -1,12 +1,12 @@
 const myReferences: AcademicRef[] = [
   {
-    citationKey: "ideationMetrics",
-    entryType: "ACADEMIC",
+    citationKey: "shapeUp",
+    entryType: "TRUSTED",
     entryTags: {
-      author: "Nelson et al.",
-      year: "2009",
+      author: "Singer and Basecamp",
+      year: "2019",
       inBib:
-        "Nelson, B.A., Wilson, J.O., Rosen, D. and Yen, J. (2009). Refined metrics for measuring ideation effectiveness. Design Studies, 30(6), pp.737–743.",
+        "Singer, R. and Basecamp (2019). Shape Up: Stop Running in Circles and Ship Work that Matters. [online] Shape Up. Available at: https://basecamp.com/shapeup/webbook [Accessed 25 Jun. 2020].",
     },
   },
 ];

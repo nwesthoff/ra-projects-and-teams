@@ -1,9 +1,10 @@
 export const theme = {
   colors: {
-    primary: "#FF3F56",
+    primary: "#0048ff",
     secondary: "#3BC5FF",
     tertiary: "#24C1E0",
     backgroundDark: "#222",
+    text: "#ccc",
   },
   breakpoints: {
     phone: 480,

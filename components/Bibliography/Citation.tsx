@@ -17,13 +17,13 @@ const StyledReactTooltip = styled(ReactTooltip)`
 `;
 
 const TooltipWrapper = styled.a`
-  color: ${transparentize(0.5, theme.colors.secondary)};
+  color: ${transparentize(0.5, theme.colors.primary)};
   font-size: 0.7em;
   transition: all 150ms ease-out;
 
   &:hover {
     text-decoration: underline;
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.primary};
   }
 `;
 

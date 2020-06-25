@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
+import { transparentize } from "polished";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -9,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     color: white;
-    background-color: #000;
+    background-color: #111;
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
@@ -24,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 1.2rem;
     line-height: 1.6em;
-    color: #ccc;
+    color: ${theme.colors.text};
 
     @media (max-width: ${theme.breakpoints.phone}px){
       font-size: 1rem;
@@ -37,17 +38,28 @@ const GlobalStyle = createGlobalStyle`
   }
 
   blockquote {
-    background: rgba(36, 193, 224, 0.08);
-    border-left: 2px solid #24c1e0;
-    padding: 0.4rem 2rem 1.2rem;
-    margin: 3.2rem 0;
+    background: ${transparentize(0.92, theme.colors.primary)};
+    border-left: 2px solid ${theme.colors.primary};
+    padding: 1.4rem 2rem 1.6rem;
+    margin: 2.4rem 0;
 
     p {
       font-family: 'IBM Plex Serif', serif;
       font-style: italic;
-      font-size: 2rem;
+      font-size: 1.6rem;
       line-height: 1.4em;
+      margin: 0;
       color: white;
+
+      &:before {
+        content: "“";
+        opacity: 70%;
+      }
+
+      &:after {
+        content: "”";
+        opacity: 70%;
+      }
     }
 
 
@@ -59,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
     li {
       text-align: end;
       display: block;
-      color: #ccc;
+      color: ${theme.colors.text};
       font-size: 1.2rem;
       font-style: normal;
 
@@ -84,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   li {
-    color: #ccc;
+    color: ${theme.colors.text};
   }
 
   b, em {
