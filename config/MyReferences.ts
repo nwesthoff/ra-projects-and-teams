@@ -19,6 +19,26 @@ const myReferences: AcademicRef[] = [
         "Kniberg, H. and Spotify (2014). Spotify Engineering Culture. [online] Spotify Engineering. Available at: https://engineering.atspotify.com/2014/03/27/spotify-engineering-culture-part-1/ [Accessed 25 Jun. 2020].",
     },
   },
+  {
+    citationKey: "agileDoberman",
+    entryType: "TRUSTED",
+    entryTags: {
+      author: "Essnert, Muñoz and Frakes",
+      year: "2020",
+      inBib:
+        "Essnert, V., Muñoz, J. and Frakes, M. (2020). Agile Beyond the Tools.",
+    },
+  },
+  {
+    citationKey: "agileManifesto",
+    entryType: "TRUSTED",
+    entryTags: {
+      author: "Beck et al.",
+      year: "2001",
+      inBib:
+        "Beck, K., Beedle, M., Bennekum, A. van, Cockburn, A., Cunningham, W., Fowler, M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R., Kern, J., Marick, B., Martin, R.C., Mellor, S., Schwaber, K., Sutherland, J. and Thomas, D. (2001). Manifesto for Agile Software Development. [online] Agilemanifesto.org. Available at: http://agilemanifesto.org/ [Accessed 28 Jun. 2020].",
+    },
+  },
 ];
 
 export interface AcademicRef {

@@ -122,7 +122,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: italic;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'IBM Plex Sans', sans-serif;
   }
 
@@ -134,7 +134,7 @@ const GlobalStyle = createGlobalStyle`
 
   h3 {
     color: ${theme.colors.primary};
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin: 2rem 0 -.8rem;
     line-height: 1.2;
     text-transform: uppercase;
@@ -143,8 +143,7 @@ const GlobalStyle = createGlobalStyle`
   
   h4, h5, h6 {
     color: white;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.2rem;
   }
 
   /* TABLE STYLES */

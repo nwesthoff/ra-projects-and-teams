@@ -12,7 +12,6 @@ module.exports = withMdxEnhanced({
   extendFrontMatter: {
     process: (mdxContent, frontMatter) => {
       const time = readingTime(mdxContent);
-      console.log(time);
       return { time };
     },
     phase: "both",
