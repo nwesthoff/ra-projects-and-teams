@@ -4,7 +4,7 @@ import { transparentize } from "polished";
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
   }
@@ -123,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3 {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
   }
 
   h2 {

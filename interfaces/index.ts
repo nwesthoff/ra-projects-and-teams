@@ -11,6 +11,12 @@ export type User = {
 
 export type FrontMatter = {
   title?: string;
+  subtitle?: string;
   introduction?: string;
-  wordcount?: number;
+  time?: {
+    text?: string;
+    minutes?: number;
+    time?: number;
+    words?: number;
+  };
 };

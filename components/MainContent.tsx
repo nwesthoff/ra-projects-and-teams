@@ -3,7 +3,7 @@ import styled from "styled-components";
 const MainContent = styled.main`
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
 
   & > * {

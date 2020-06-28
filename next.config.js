@@ -1,5 +1,7 @@
 // next.config.js
 const withMdxEnhanced = require("next-mdx-enhanced");
+const readingTime = require("reading-time");
+const { time } = require("console");
 
 module.exports = withMdxEnhanced({
   layoutPath: "layouts",
@@ -8,7 +10,11 @@ module.exports = withMdxEnhanced({
   remarkPlugins: [],
   rehypePlugins: [],
   extendFrontMatter: {
-    process: (mdxContent, frontMatter) => {},
-    phase: "prebuild|loader|both",
+    process: (mdxContent, frontMatter) => {
+      const time = readingTime(mdxContent);
+      console.log(time);
+      return { time };
+    },
+    phase: "both",
   },
 })(/* your normal nextjs config */);
