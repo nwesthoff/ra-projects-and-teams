@@ -1,13 +1,14 @@
 // next.config.js
 const withMdxEnhanced = require("next-mdx-enhanced");
 const readingTime = require("reading-time");
-const { time } = require("console");
+const headings = require("remark-autolink-headings");
+const containers = require("remark-containers");
 
 module.exports = withMdxEnhanced({
   layoutPath: "layouts",
   defaultLayout: true,
   fileExtensions: ["mdx"],
-  remarkPlugins: [],
+  remarkPlugins: [{ headings }, containers],
   rehypePlugins: [],
   extendFrontMatter: {
     process: (mdxContent, frontMatter) => {

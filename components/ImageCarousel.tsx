@@ -34,17 +34,10 @@ const CarouselFigure = styled.figure`
 `;
 
 const ImageCarouselWrapper = styled.div`
-  && {
-    width: 100%;
-    max-width: 100%;
-  }
-
+  width: 100%;
   overflow: hidden;
-  display: flex;
   color: white;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: block;
   padding: 2rem 0rem;
 
   a {

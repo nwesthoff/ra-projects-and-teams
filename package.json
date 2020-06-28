@@ -24,6 +24,8 @@
     "react-scroll-parallax": "^2.3.2",
     "react-tooltip": "^4.2.7",
     "reading-time": "^1.2.0",
+    "remark-autolink-headings": "^6.0.1",
+    "remark-containers": "^1.1.2",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
