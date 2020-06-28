@@ -11,10 +11,10 @@ const MainContent = styled.main`
   .wide-width,
   .full-width {
     width: 100%;
-    margin: 0 2rem;
+    padding: 0 2rem;
 
     @media (max-width: ${theme.breakpoints.tablet}px) {
-      margin: 0 1.2rem;
+      padding: 0 1.2rem;
     }
   }
 
@@ -27,7 +27,7 @@ const MainContent = styled.main`
   }
 
   .full-width {
-    margin: 0;
+    padding: 0;
   }
 `;
 

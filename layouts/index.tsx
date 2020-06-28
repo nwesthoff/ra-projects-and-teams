@@ -8,10 +8,9 @@ import MainContent from "../components/MainContent";
 import { darken } from "polished";
 
 const PageIntroduction = styled.div`
-  && {
-    width: 100%;
-    max-width: 1200px;
-  }
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem 5rem;
 
   h1 {
     font-size: 5rem;
@@ -38,6 +37,8 @@ const PageIntroduction = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.tablet}px) {
+    margin: 0 1.2rem;
+
     h1 {
       font-size: 3rem;
     }
