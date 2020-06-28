@@ -204,7 +204,6 @@ const GlobalStyle = createGlobalStyle`
 
   .flickity-enabled.is-draggable {
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
