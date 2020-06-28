@@ -37,10 +37,28 @@ const PageIntroduction = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.tablet}px) {
-    margin: 0 1.2rem;
+    padding: 0 1.2rem;
+
+    p {
+      padding-left: 1.2rem;
+    }
 
     h1 {
       font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.phone}px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
     }
   }
 `;

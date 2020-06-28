@@ -8,7 +8,7 @@ import React, {
 import { ReferenceContext } from "./ReferenceProvider";
 import styled from "styled-components";
 import { theme } from "../../config/theme";
-import { transparentize } from "polished";
+import { darken } from "polished";
 import ReactTooltip from "react-tooltip";
 
 const StyledReactTooltip = styled(ReactTooltip)`
@@ -17,13 +17,13 @@ const StyledReactTooltip = styled(ReactTooltip)`
 `;
 
 const TooltipWrapper = styled.a`
-  color: ${transparentize(0.5, theme.colors.primary)};
+  color: ${theme.colors.secondary};
   font-size: 0.7em;
   transition: all 150ms ease-out;
 
   &:hover {
     text-decoration: underline;
-    color: ${theme.colors.primary};
+    color: ${darken(0.3, theme.colors.secondary)};
   }
 `;
 

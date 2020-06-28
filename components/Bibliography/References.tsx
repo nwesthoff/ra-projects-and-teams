@@ -9,8 +9,9 @@ const ReferenceWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #111;
+  background-color: #161616;
   margin: 4rem 0;
+  padding: 0 0 2rem;
 `;
 
 const ReferenceList = styled.ul`
@@ -77,7 +78,7 @@ export default function References() {
   return (
     <ReferenceWrapper>
       <ContentContainer wide>
-        <h2>References</h2>
+        <h2 style={{ marginTop: "2rem" }}>References</h2>
         {academicReferences && academicReferences?.length > 0 ? (
           <div>
             <h4>Academic</h4>
