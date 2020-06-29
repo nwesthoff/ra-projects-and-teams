@@ -30,7 +30,7 @@ const ReferenceList = styled.ul`
 
 const ReferenceListItem = styled.li`
   font-size: 0.9rem;
-  color: #ddd;
+  color: #ccc;
   margin-bottom: 0.8rem;
   /* for Chrome and Edge */
   break-inside: avoid-column;
@@ -42,11 +42,10 @@ const ReferenceListItem = styled.li`
 const ReferenceLink = styled.a`
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: hidden;
   display: inline-block;
   max-width: 280px;
-  vertical-align: baseline;
-  top: 3px;
+  vertical-align: top;
   position: relative;
 
   @media (max-width: ${theme.breakpoints.tablet}px) {
@@ -81,7 +80,7 @@ export default function References() {
         <h2 style={{ marginTop: "2rem" }}>References</h2>
         {academicReferences && academicReferences?.length > 0 ? (
           <div>
-            <h4>Academic</h4>
+            <h4>Academic Sources</h4>
             <ReferenceList>
               {academicReferences.map((ref) => (
                 <ReferenceListItem
@@ -109,7 +108,7 @@ export default function References() {
 
         {tradeReferences && tradeReferences?.length > 0 ? (
           <div>
-            <h4>Trade magazines</h4>
+            <h4>Trade Sources</h4>
             <ReferenceList>
               {tradeReferences.map((ref) => (
                 <ReferenceListItem
@@ -137,7 +136,7 @@ export default function References() {
 
         {trustedReferences && trustedReferences?.length > 0 ? (
           <div>
-            <h4>Trusted Source</h4>
+            <h4>Trusted Sources</h4>
             <ReferenceList>
               {trustedReferences.map((ref) => (
                 <ReferenceListItem
