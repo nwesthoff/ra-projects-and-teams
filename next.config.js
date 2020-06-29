@@ -11,7 +11,9 @@ module.exports = withMdxEnhanced({
   rehypePlugins: [],
   extendFrontMatter: {
     process: (mdxContent, frontMatter) => {
-      const time = readingTime(mdxContent);
+      // Pretty bad implementation to strip HTML but good enough for this report
+      cleanText = mdxContent.replace(/<\/?[^>]+(>|$)/g, "");
+      const time = readingTime(cleanText);
       return { time };
     },
     phase: "both",
