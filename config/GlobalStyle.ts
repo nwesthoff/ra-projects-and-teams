@@ -14,8 +14,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.background};
     margin: 0;
     padding: 0;
-    font-size: 1.2rem;
-    line-height: 1.4em;
+    font-size: 1.3rem;
+    line-height: 1.5em;
 
     @media (max-width: ${theme.breakpoints.phone}px){
       font-size: 1rem;
@@ -24,8 +24,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: 1.2rem;
-    line-height: 1.6em;
     color: ${theme.colors.text};
 
     @media (max-width: ${theme.breakpoints.phone}px){
