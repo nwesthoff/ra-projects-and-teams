@@ -79,6 +79,16 @@ const myReferences: AcademicRef[] = [
         "Cash, J.I., Earl, M.J. and Morison, R. (2008). Teaming Up to Crack Innovation and Enterprise Integration. Harvard Business Review, 86(11), pp.90–100.",
     },
   },
+  {
+    citationKey: "wheelanEffective",
+    entryType: "TRADEMAG",
+    entryTags: {
+      author: "Wheelan",
+      year: "2016",
+      inBib:
+        "Wheelan, S.A. (2016). Creating Effective Teams: a Guide for Members and Leaders. Los Angeles: Sage.",
+    },
+  },
 ];
 
 export interface AcademicRef {
