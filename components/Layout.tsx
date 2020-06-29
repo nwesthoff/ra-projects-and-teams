@@ -3,6 +3,7 @@ import Head from "next/head";
 import { PageWrapper } from "./PageWrapper";
 import GlobalStyle from "../config/GlobalStyle";
 import styled from "styled-components";
+import Nav from "./Navigation/Nav";
 
 const StyledFooter = styled.footer`
   margin: 2rem 0;
@@ -49,9 +50,9 @@ const Layout: React.FunctionComponent<Props> = ({
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      {/* <header>
+      <header>
         <Nav />
-      </header> */}
+      </header>
       {children}
       <PageWrapper>
         <StyledFooter>
