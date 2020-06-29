@@ -117,7 +117,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   figcaption {
-    margin-top: 1.2rem;
+    margin: 1.2rem 1.2rem 2rem;
     text-align: center;
     font-style: italic;
   }
