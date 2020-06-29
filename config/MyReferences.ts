@@ -59,6 +59,16 @@ const myReferences: AcademicRef[] = [
         "Landis, D. (2014). What Does Lean UX Have That I don’t? [Part 1 of 3]. [online] Lithespeed. Available at: https://lithespeed.com/lean-ux-dont-part-1-3-2/ [Accessed 29 Jun. 2020].",
     },
   },
+  {
+    citationKey: "mckinseyInnovation",
+    entryType: "TRUSTED",
+    entryTags: {
+      author: "Hillenbrand et al.",
+      year: "2019",
+      inBib:
+        "Hillenbrand, P., Kiewell, D., Miller-Cheevers, R., Ostojic, I. and Springer, G. (2019). Traditional company, new businesses: The pairing that can ensure an incumbent’s survival. [online] McKinsey & Company. Available at: https://www.mckinsey.com/industries/oil-and-gas/our-insights/traditional-company-new-businesses-the-pairing-that-can-ensure-an-incumbents-survival [Accessed 28 Apr. 2020].",
+    },
+  },
 ];
 
 export interface AcademicRef {
