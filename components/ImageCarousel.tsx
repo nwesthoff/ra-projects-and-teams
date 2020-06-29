@@ -26,10 +26,22 @@ const CarouselFigure = styled.figure`
   height: 500px;
   display: block;
 
+  @media (max-width: ${theme.breakpoints.desktop}px) {
+    width: 70%;
+    margin: 0 1.2rem;
+    height: 400px;
+  }
+
+  @media (max-width: ${theme.breakpoints.tablet}px) {
+    width: 80%;
+    margin: 0 0.8rem;
+    height: 300px;
+  }
+
   @media (max-width: ${theme.breakpoints.phone}px) {
     width: 80%;
     margin: 0 0.4rem;
-    height: 250px;
+    height: 200px;
   }
 `;
 
