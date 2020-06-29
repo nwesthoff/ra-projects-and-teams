@@ -61,7 +61,7 @@ const myReferences: AcademicRef[] = [
   },
   {
     citationKey: "mckinseyInnovation",
-    entryType: "TRUSTED",
+    entryType: "TRADEMAG",
     entryTags: {
       author: "Hillenbrand et al.",
       year: "2019",
