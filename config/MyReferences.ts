@@ -23,7 +23,7 @@ const myReferences: AcademicRef[] = [
     citationKey: "spotifyCulture",
     entryType: "TRUSTED",
     entryTags: {
-      author: "Kniberg and Spotify",
+      author: "Kniberg",
       year: "2014",
       inBib:
         "Kniberg, H. and Spotify (2014). Spotify Engineering Culture. [online] Spotify Engineering. Available at: https://engineering.atspotify.com/2014/03/27/spotify-engineering-culture-part-1/ [Accessed 25 Jun. 2020].",
@@ -67,6 +67,16 @@ const myReferences: AcademicRef[] = [
       year: "2019",
       inBib:
         "Hillenbrand, P., Kiewell, D., Miller-Cheevers, R., Ostojic, I. and Springer, G. (2019). Traditional company, new businesses: The pairing that can ensure an incumbent’s survival. [online] McKinsey & Company. Available at: https://www.mckinsey.com/industries/oil-and-gas/our-insights/traditional-company-new-businesses-the-pairing-that-can-ensure-an-incumbents-survival [Accessed 28 Apr. 2020].",
+    },
+  },
+  {
+    citationKey: "hbrEnterpriseInnovation",
+    entryType: "TRADEMAG",
+    entryTags: {
+      author: "Cash, Earl and Morison",
+      year: "2008",
+      inBib:
+        "Cash, J.I., Earl, M.J. and Morison, R. (2008). Teaming Up to Crack Innovation and Enterprise Integration. Harvard Business Review, 86(11), pp.90–100.",
     },
   },
 ];
