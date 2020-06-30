@@ -89,6 +89,36 @@ const myReferences: AcademicRef[] = [
         "Wheelan, S.A. (2016). Creating Effective Teams: a Guide for Members and Leaders. Los Angeles: Sage.",
     },
   },
+  {
+    citationKey: "socialInformation",
+    entryType: "TRADEMAG",
+    entryTags: {
+      author: "Brown",
+      year: "2017",
+      inBib:
+        "Brown, J.S. (2017). The Social Life of Information. Harvard Business Review Press.",
+    },
+  },
+  {
+    citationKey: "sawyerFlow",
+    entryType: "TRADEMAG",
+    entryTags: {
+      author: "Sawyer",
+      year: "2008",
+      inBib:
+        "Sawyer, R.K. (2008). Group genius : the creative power of collaboration. New York: Basic Books.",
+    },
+  },
+  {
+    citationKey: "csikszentmihalyiFlow",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Mirvis and Csikszentmihalyi",
+      year: "1991",
+      inBib:
+        "Mirvis, P.H. and Csikszentmihalyi, M. (1991). Flow: The Psychology of Optimal Experience. The Academy of Management Review, 16(3), p.636.",
+    },
+  },
 ];
 
 export interface AcademicRef {
