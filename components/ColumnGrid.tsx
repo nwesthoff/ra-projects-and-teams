@@ -13,11 +13,8 @@ const ColumnGrid = styled.div`
   & > div {
     position: relative;
     margin: 1.2rem 0 0 1.2rem;
-    flex-basis: calc(
-      ${(props: { cols: number }) => {
-          return 100 / props.cols || 3;
-        }}% - 1.2rem
-    );
+    flex-basis: ${(props: { cols: number }) =>
+      `calc((100%/${props.cols ? props.cols : 3}) - 1.2rem)`};
     gap: 1.2rem;
     flex-grow: 1;
     min-width: 260px;
