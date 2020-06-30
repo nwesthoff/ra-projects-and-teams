@@ -16,6 +16,6 @@ module.exports = withMdxEnhanced({
       const time = readingTime(cleanText);
       return { time };
     },
-    phase: "both",
+    phase: process.env.NODE_ENV === "production" ? "prebuild" : "both",
   },
 })(/* your normal nextjs config */);

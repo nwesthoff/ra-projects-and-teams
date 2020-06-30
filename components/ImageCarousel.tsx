@@ -9,7 +9,11 @@ const CarouselFigcaption = styled.figcaption`
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  padding: 1.2rem;
+  padding: 0.8rem;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
 
   @media (max-width: ${theme.breakpoints.phone}px) {
     padding: 0.4rem;

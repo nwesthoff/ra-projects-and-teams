@@ -91,23 +91,27 @@ const DefaultLayout = (frontMatter: FrontMatter) => {
                 fontSize: ".8em",
                 border: "none",
                 fontFamily: "IBM Plex Sans",
+                marginBottom: "0",
+                textTransform: "uppercase",
               }}
             >
               BY{" "}
               <NameLink href="https://nilswesthoff/com" target="blank">
                 NILS WESTHOFF
               </NameLink>{" "}
-              <br />
-              <span
-                style={{
-                  opacity: 0.5,
-                  fontFamily: "IBM Plex Sans",
-                  textTransform: "uppercase",
-                }}
-              >
-                June 2020 | Word Count: {frontMatter.time?.words} | Reading
-                Time: {frontMatter.time?.text}
-              </span>
+              | June 2020
+            </p>
+            <p
+              style={{
+                marginTop: "0",
+                opacity: 0.5,
+                fontFamily: "IBM Plex Sans",
+                textTransform: "uppercase",
+                fontSize: ".8em",
+                border: "none",
+              }}
+            >
+              {frontMatter.time?.words} Words | {frontMatter.time?.text}
             </p>
           </PageIntroduction>
           {children}
