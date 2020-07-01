@@ -119,6 +119,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 1.2rem 1.2rem 2rem;
     text-align: center;
     font-style: italic;
+
+    small {
+      opacity: 0.7;
+      font-style: normal;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
