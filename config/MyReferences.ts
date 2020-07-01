@@ -60,6 +60,25 @@ const myReferences: AcademicRef[] = [
     },
   },
   {
+    citationKey: "vimlaMistakes",
+    entryType: "TRUSTED",
+    entryTags: {
+      author: "Appadoo",
+      year: "2020a",
+      inBib: "Appadoo, V. (2020a). Design Thinking in Non Design Cultures.",
+    },
+  },
+  {
+    citationKey: "appadooCulture",
+    entryType: "TRUSTED",
+    entryTags: {
+      author: "Appadoo",
+      year: "2020b",
+      inBib:
+        "Appadoo, V. (2020b). Understanding Culture & Priorities (Part 1 of 2). [online] Medium. Available at: https://medium.com/honeybadgerhq/understanding-culture-priorities-part-1-of-2-75c77e076a33 [Accessed 1 Jul. 2020].",
+    },
+  },
+  {
     citationKey: "mckinseyInnovation",
     entryType: "TRADEMAG",
     entryTags: {
@@ -117,6 +136,16 @@ const myReferences: AcademicRef[] = [
       year: "1991",
       inBib:
         "Mirvis, P.H. and Csikszentmihalyi, M. (1991). Flow: The Psychology of Optimal Experience. The Academy of Management Review, 16(3), p.636.",
+    },
+  },
+  {
+    citationKey: "parkerSelfOrganised",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Parker, Holesgrove and Pathak",
+      year: "2015",
+      inBib:
+        "Parker, D.W., Holesgrove, M. and Pathak, R. (2015). Improving productivity with self-organised teams and agile leadership. International Journal of Productivity and Performance Management, 64(1), pp.112–128.",
     },
   },
 ];
