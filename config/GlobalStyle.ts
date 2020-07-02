@@ -94,6 +94,15 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  ul.contains-task-list {
+    list-style: none;
+    padding-left: 0;
+
+    ul, ol {
+      padding-left: 1.6rem;
+    }
+  }
+
   li {
     color: ${theme.colors.text};
   }

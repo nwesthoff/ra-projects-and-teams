@@ -148,6 +148,16 @@ const myReferences: AcademicRef[] = [
         "Parker, D.W., Holesgrove, M. and Pathak, R. (2015). Improving productivity with self-organised teams and agile leadership. International Journal of Productivity and Performance Management, 64(1), pp.112–128.",
     },
   },
+  {
+    citationKey: "davisRotating",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Davis and Eisenhardt",
+      year: "2011",
+      inBib:
+        "Davis, J.P. and Eisenhardt, K.M. (2011). Rotating Leadership and Collaborative Innovation. Administrative Science Quarterly, 56(2), pp.159–201.",
+    },
+  },
 ];
 
 export interface AcademicRef {
