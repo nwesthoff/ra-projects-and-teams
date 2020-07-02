@@ -188,6 +188,16 @@ const myReferences: AcademicRef[] = [
         "Phillips, K.W. (2014). How Diversity Works. Scientific American, [online] 311(4), pp.42–47. Available at: https://www.scientificamerican.com/article/how-diversity-makes-us-smarter/.",
     },
   },
+  {
+    citationKey: "smithResponsibility",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Smith and Sharma",
+      year: "2002",
+      inBib:
+        "Smith, P.A.. and Sharma, M. (2002). Developing personal responsibility and leadership traits in all your employees: part 1 – shaping and harmonizing the high‐performance drivers. Management Decision, [online] 40(8), pp.764–774. Available at: https://www.deepdyve.com/lp/emerald-publishing/developing-personal-responsibility-and-leadership-traits-in-all-your-uVX8BixxJA.",
+    },
+  },
 ];
 
 export interface AcademicRef {
