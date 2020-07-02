@@ -158,6 +158,16 @@ const myReferences: AcademicRef[] = [
         "Davis, J.P. and Eisenhardt, K.M. (2011). Rotating Leadership and Collaborative Innovation. Administrative Science Quarterly, 56(2), pp.159–201.",
     },
   },
+  {
+    citationKey: "erezRotating",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Erez, Lepine and Elms",
+      year: "2002",
+      inBib:
+        "Erez, A., Lepine, J.A. and Elms, H. (2002). Effects of Rotated Leadership and Peer Evaluation on the Functioning and Effectiveness of Self-Managed Teams: a Quasi-Experiment. Personnel Psychology, [online] 55(4), pp.929–948. Available at: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1744-6570.2002.tb00135.x [Accessed 11 Sep. 2019].",
+    },
+  },
 ];
 
 export interface AcademicRef {
