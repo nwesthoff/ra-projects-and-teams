@@ -168,6 +168,26 @@ const myReferences: AcademicRef[] = [
         "Erez, A., Lepine, J.A. and Elms, H. (2002). Effects of Rotated Leadership and Peer Evaluation on the Functioning and Effectiveness of Self-Managed Teams: a Quasi-Experiment. Personnel Psychology, [online] 55(4), pp.929–948. Available at: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1744-6570.2002.tb00135.x [Accessed 11 Sep. 2019].",
     },
   },
+  {
+    citationKey: "phillipsSurface",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Phillips, Northcraft and Neale",
+      year: "2006",
+      inBib:
+        "Phillips, K.W., Northcraft, G.B. and Neale, M.A. (2006). Surface-Level Diversity and Decision-Making in Groups: When Does Deep-Level Similarity Help? Group Processes & Intergroup Relations, 9(4), pp.467–482.",
+    },
+  },
+  {
+    citationKey: "phillipsDiversity",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Phillips",
+      year: "2014",
+      inBib:
+        "Phillips, K.W. (2014). How Diversity Works. Scientific American, [online] 311(4), pp.42–47. Available at: https://www.scientificamerican.com/article/how-diversity-makes-us-smarter/.",
+    },
+  },
 ];
 
 export interface AcademicRef {
