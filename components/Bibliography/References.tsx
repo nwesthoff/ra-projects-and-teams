@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import ContentContainer from "../ContentContainer";
 import { ReferenceContext } from "./ReferenceProvider";
-import ReactLinkify from "react-linkify";
 import { theme } from "../../config/theme";
+import ReferenceListItem from "./ReferenceListItem";
 
 const ReferenceWrapper = styled.div`
   display: flex;
@@ -25,31 +25,6 @@ const ReferenceList = styled.ul`
 
   @media (max-width: ${theme.breakpoints.tablet}px) {
     column-count: 1;
-  }
-`;
-
-const ReferenceListItem = styled.li`
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-bottom: 0.8rem;
-  /* for Chrome and Edge */
-  break-inside: avoid-column;
-  -webkit-column-break-inside: avoid;
-  /* for Firefox */
-  page-break-inside: avoid;
-`;
-
-const ReferenceLink = styled.a`
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow-x: hidden;
-  display: inline-block;
-  max-width: 280px;
-  vertical-align: top;
-  position: relative;
-
-  @media (max-width: ${theme.breakpoints.tablet}px) {
-    max-width: 200px;
   }
 `;
 
@@ -84,23 +59,9 @@ export default function References() {
             <ReferenceList>
               {academicReferences.map((ref) => (
                 <ReferenceListItem
-                  id={`ref-${ref.citationKey}`}
-                  key={ref.citationKey}
-                >
-                  <ReactLinkify
-                    componentDecorator={(decoratedHref, decoratedText, key) => (
-                      <ReferenceLink
-                        target="blank"
-                        href={decoratedHref}
-                        key={key}
-                      >
-                        {decoratedText}
-                      </ReferenceLink>
-                    )}
-                  >
-                    {ref.entryTags.inBib}
-                  </ReactLinkify>
-                </ReferenceListItem>
+                  reference={ref}
+                  key={ref.citationKey || "huh"}
+                />
               ))}
             </ReferenceList>
           </div>
@@ -112,23 +73,9 @@ export default function References() {
             <ReferenceList>
               {tradeReferences.map((ref) => (
                 <ReferenceListItem
-                  id={`ref-${ref.citationKey}`}
-                  key={ref.citationKey}
-                >
-                  <ReactLinkify
-                    componentDecorator={(decoratedHref, decoratedText, key) => (
-                      <ReferenceLink
-                        target="blank"
-                        href={decoratedHref}
-                        key={key}
-                      >
-                        {decoratedText}
-                      </ReferenceLink>
-                    )}
-                  >
-                    {ref.entryTags.inBib}
-                  </ReactLinkify>
-                </ReferenceListItem>
+                  reference={ref}
+                  key={ref.citationKey || "huh"}
+                />
               ))}
             </ReferenceList>
           </div>
@@ -140,23 +87,9 @@ export default function References() {
             <ReferenceList>
               {trustedReferences.map((ref) => (
                 <ReferenceListItem
-                  id={`ref-${ref.citationKey}`}
-                  key={ref.citationKey}
-                >
-                  <ReactLinkify
-                    componentDecorator={(decoratedHref, decoratedText, key) => (
-                      <ReferenceLink
-                        target="blank"
-                        href={decoratedHref}
-                        key={key}
-                      >
-                        {decoratedText}
-                      </ReferenceLink>
-                    )}
-                  >
-                    {ref.entryTags.inBib}
-                  </ReactLinkify>
-                </ReferenceListItem>
+                  reference={ref}
+                  key={ref.citationKey || "huh"}
+                />
               ))}
             </ReferenceList>
           </div>
