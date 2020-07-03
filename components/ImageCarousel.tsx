@@ -24,28 +24,36 @@ const CarouselFigcaption = styled.figcaption`
 const CarouselFigure = styled.figure`
   border-radius: 8px;
   overflow: hidden;
-  width: 50%;
+  width: ${(props: { customWidth: number }) =>
+    props.customWidth ? props.customWidth : "50"}%;
   position: relative;
   margin: 0 2rem;
-  height: 500px;
+  height: ${(props: { customWidth: number }) =>
+    props.customWidth ? "none" : "500px"};
   display: block;
 
   @media (max-width: ${theme.breakpoints.desktop}px) {
-    width: 70%;
+    width: ${(props: { customWidth: number }) =>
+      props.customWidth ? props.customWidth : "70"}%;
     margin: 0 1.2rem;
-    height: 400px;
+    height: ${(props: { customWidth: number }) =>
+      props.customWidth ? "none" : "400px"};
   }
 
   @media (max-width: ${theme.breakpoints.tablet}px) {
-    width: 80%;
+    width: ${(props: { customWidth: number }) =>
+      props.customWidth ? props.customWidth : "80"}%;
     margin: 0 0.8rem;
-    height: 300px;
+    height: ${(props: { customWidth: number }) =>
+      props.customWidth ? "none" : "300px"};
   }
 
   @media (max-width: ${theme.breakpoints.phone}px) {
-    width: 80%;
+    width: ${(props: { customWidth: number }) =>
+      props.customWidth ? props.customWidth : "80"}%;
     margin: 0 0.4rem;
-    height: 200px;
+    height: ${(props: { customWidth: number }) =>
+      props.customWidth ? "none" : "200px"};
   }
 `;
 
@@ -78,9 +86,10 @@ interface CarouselImage {
 
 interface Props {
   imageArr: CarouselImage[];
+  width: number;
 }
 
-const ImageCarousel = ({ imageArr }: Props) => {
+const ImageCarousel = ({ imageArr, width }: Props) => {
   if (imageArr?.length > 0) {
     return (
       <ImageCarouselWrapper>
@@ -89,15 +98,16 @@ const ImageCarousel = ({ imageArr }: Props) => {
             elementType="div"
             options={flickityOptions} // takes flickity options {}
             reloadOnUpdate // default false
-            static
+            // static
           >
             {imageArr.map((image) => {
               return (
-                <CarouselFigure key={image.src}>
+                <CarouselFigure key={image.src} customWidth={width}>
                   <img
                     src={image.src}
                     alt={image.alt}
                     style={{
+                      display: "block",
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",

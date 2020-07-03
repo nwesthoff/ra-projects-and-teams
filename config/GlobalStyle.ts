@@ -159,6 +159,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
   }
 
+  hr {
+    margin: 6rem 0;
+  }
+
   /* TABLE STYLES */
 
   table {

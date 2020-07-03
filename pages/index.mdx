@@ -8,6 +8,8 @@ import Citation from "../components/Bibliography/Citation";
 import ImageCarousel from "../components/ImageCarousel";
 import Image from "../components/Image";
 import ColumnGrid from "../components/ColumnGrid";
+import DownloadButton from "../components/DownloadButton";
+import { MdPictureAsPdf, MdSlideshow } from "react-icons/md";
 
 ::: section small-width
 
@@ -36,9 +38,12 @@ Victor continued his breakdown by showing how Agile works better together with D
 
 ::: div wide-width
 
-<Image 
-	src="/img/better-together-model.png"
-	alt="How Design Thinking, Lean and Agile work together">Figure: How Design Thinking, Lean and Agile work together <Citation id="daveLandis" />
+<Image
+  src="/img/better-together-model.png"
+  alt="How Design Thinking, Lean and Agile work together"
+>
+  Figure: How Design Thinking, Lean and Agile work together{" "}
+  <Citation id="daveLandis" />
 </Image>
 
 :::
@@ -88,9 +93,11 @@ Vimla Appadoo envisions culture as a bubble that sits around the systems, proces
 
 ::: section wide-width
 
-<Image 
-	src="/img/culture.png"
-	alt="Circle of personal culture, wrapped in team culture, wrapped in business culture">Figure: How personal culture fits inside business culture
+<Image
+  src="/img/culture.png"
+  alt="Circle of personal culture, wrapped in team culture, wrapped in business culture"
+>
+  Figure: How personal culture fits inside business culture
 </Image>
 
 :::
@@ -119,12 +126,13 @@ Smith and Sharma think of this in two dimensions; autonomy and alignment. Autono
 
 ::: section wide-width
 
-<Image 
-	src="/img/aligned-autonomy.png"
-	alt="A matrix showing four quadrants. X-axis shows low to high autonomy. Y-axis shows low to high alignment">
+<Image
+  src="/img/aligned-autonomy.png"
+  alt="A matrix showing four quadrants. X-axis shows low to high autonomy. Y-axis shows low to high alignment"
+>
   Figure: Aligned autonomy <br />
   <small>
-    original by Henrik Kniberg 
+    original by Henrik Kniberg
     <Citation id="spotifyCulture" hideAuthor />, adapted by me
   </small>
 </Image>
@@ -144,18 +152,20 @@ Spotify details how they apply this knowledge in practice. The last environment,
 
 On a smaller scale, individuals must develop a responsibility and leadership. Smith and Sharma define three key elements that, once appropriately defined, attract leadership and responsibility <Citation id="smithResponsibility" />. Adequately defining these elements would grant autonomy to working teams.
 
-<Image 
-	src="/img/harmonizing.png"
-	alt="An elaborate venn diagram showing three elements that increase leadership within a team">
+<Image
+  src="/img/harmonizing.png"
+  alt="An elaborate venn diagram showing three elements that increase leadership within a team"
+>
   Figure: Leadership Performance System <br />
   <small>
-    original by Peter Smith and Meenakshi Sharma <Citation id="smithResponsibility" hideAuthor />, adapted by me
+    original by Peter Smith and Meenakshi Sharma 
+    <Citation id="smithResponsibility" hideAuthor />, adapted by me
   </small>
 </Image>
 
-1. *Focus*: defined and clear goals for the business and team
-2. *Will*: finding meaning and purpose in the work
-3. *Capability*: adequately skilled team members, availability of resources
+1. _Focus_: defined and clear goals for the business and team
+2. _Will_: finding meaning and purpose in the work
+3. _Capability_: adequately skilled team members, availability of resources
 
 ### Shaping Work
 
@@ -173,10 +183,14 @@ I've noticed that I've been doing this at Hyper Island too (especially during la
 
 How team members behave is critical to the success of the team and significantly affects how knowledge is received. There are many factors to take into account when compiling a new team. What would an effective team look like? How should they act? Who are the people in an effective team? One lens to increase our understanding of effective teams is Wheelan's _Integrated Model of Group Dynamics_ (IMGD). She defines four stages of group development <Citation id="wheelanEffective" />.
 
-<Image 
-	src="/img/team-development.png"
-	alt="Susan Wheelan Team Development Diagram. Left to Right: 1. Dependency and inclusion 2. Counter-dependency and fighting 3. Trust and structure 4. Work and productivity">
-Figure: Susan Wheelan's Integrative Model of Group Development <br /> <small>original by Susan Wheelan <Citation id="wheelanEffective" />, adapted by me</small>
+<Image
+  src="/img/team-development.png"
+  alt="Susan Wheelan Team Development Diagram. Left to Right: 1. Dependency and inclusion 2. Counter-dependency and fighting 3. Trust and structure 4. Work and productivity"
+>
+  Figure: Susan Wheelan's Integrative Model of Group Development <br />{" "}
+  <small>
+    original by Susan Wheelan <Citation id="wheelanEffective" />
+  </small>
 </Image>
 
 :::
@@ -305,9 +319,9 @@ While Fried is mostly focused on reducing communication, favouring asynchronous 
 
 ### Project & Reflect
 
-Appropriately kicking off new projects (with a new team) can significantly impact the perception team members have on the work ahead. By *projecting* ourselves forward and opening a conversation on the previously mentioned focus, will and capability, teams are able to foster leadership from within <Citation id="smithResponsibility" />. Concretely, addressing purpose, desired outcomes, values, roles and skills with the team we're more resilient to the issues that lie ahead.
+Appropriately kicking off new projects (with a new team) can significantly impact the perception team members have on the work ahead. By _projecting_ ourselves forward and opening a conversation on the previously mentioned focus, will and capability, teams are able to foster leadership from within <Citation id="smithResponsibility" />. Concretely, addressing purpose, desired outcomes, values, roles and skills with the team we're more resilient to the issues that lie ahead.
 
-During and upon concluding projects, there are opportunities to *reflect*. This creates a level playing field and develops openness within a group. By forcing team members to put their fears and anxieties on the table, individuals are able to relate better to one another. They become more comfortable with sharing deep feelings. This reciprocity of sharing fears forms trust and with trust we're able to share work we feel insecure about too, promoting creative output.
+During and upon concluding projects, there are opportunities to _reflect_. This creates a level playing field and develops openness within a group. By forcing team members to put their fears and anxieties on the table, individuals are able to relate better to one another. They become more comfortable with sharing deep feelings. This reciprocity of sharing fears forms trust and with trust we're able to share work we feel insecure about too, promoting creative output.
 
 ### Asynchronous
 
@@ -323,7 +337,7 @@ Their main argument is that verbal means of communication cost more time to mult
 >
 > - Jason Fried <Citation id="basecampComms" hideAuthor />
 
-While not everyone will agree with me, in my personal work at Hyper Island I've experienced this as well. Sharing research often played out as listing _everything_ we had found, causing us to run over our timebox. I suspect sharing  this through writing or drawing would have prevented interruptions and delayed questions or judgement. The discussions we'd have had would have been more meaningful and fruitful. Definitely something I'm willing to try in the future.
+While not everyone will agree with me, in my personal work at Hyper Island I've experienced this as well. Sharing research often played out as listing _everything_ we had found, causing us to run over our timebox. I suspect sharing this through writing or drawing would have prevented interruptions and delayed questions or judgement. The discussions we'd have had would have been more meaningful and fruitful. Definitely something I'm willing to try in the future.
 
 ### Balance
 
@@ -351,13 +365,15 @@ Let's regard the knowledge within an organization as a collective brain. Suddenl
 
 ## Remote
 
-*Work-from-home* has been slowly gaining traction over the past few decades <Citation id="felsteadRemote" />. Though this year we have all — unfortunately had to — become experts at remote work. Many of us have been blessed by high speed internet and the existence of online collaboration tools. Tools like Zoom, Miro and Keynote Live allow us to keep working together, even when physically apart.
+_Work-from-home_ has been slowly gaining traction over the past few decades <Citation id="felsteadRemote" />. Though this year we have all — unfortunately had to — become experts at remote work. Many of us have been blessed by high speed internet and the existence of online collaboration tools. Tools like Zoom, Miro and Keynote Live allow us to keep working together, even when physically apart.
 
 :::
 
 ::: div wide-width
 
-<Image src="/img/miro.jpg" alt="Miro">Figure: Online remote whiteboarding tool Miro</Image>
+<Image src="/img/miro.jpg" alt="Miro">
+  Figure: Online remote whiteboarding tool Miro
+</Image>
 
 :::
 
@@ -365,7 +381,7 @@ Let's regard the knowledge within an organization as a collective brain. Suddenl
 
 ### Watercooler Moments
 
-Unfortunately these tools do not reduce the this distance between us and it's unable to solve some of the problems this separation creates. Virtual environments deprive us from the learning we used to be able to get from peers outside of class <Citation id="socialInformation" page="140-145" />. Rob Potts (our programme leader at Hyper Island) emphasized the importance of these *watercooler moments* we used to have while working together in the studio. It's where we used to bump into each other by chance, where we used to talk about how awful the water tastes in the UK and where we discussed what to eat for lunch. In remote collaboration the way we're able to *instantly* and *spontaneously* bond over something as simple as coffee lacks <Citation id="gorlenkoRemote" />. The lack of behavioural cues force us to rely on verbal communication mostly. I have personally observed that adjusting to this new reality is clearly more difficult to some than others.
+Unfortunately these tools do not reduce the this distance between us and it's unable to solve some of the problems this separation creates. Virtual environments deprive us from the learning we used to be able to get from peers outside of class <Citation id="socialInformation" page="140-145" />. Rob Potts (our programme leader at Hyper Island) emphasized the importance of these _watercooler moments_ we used to have while working together in the studio. It's where we used to bump into each other by chance, where we used to talk about how awful the water tastes in the UK and where we discussed what to eat for lunch. In remote collaboration the way we're able to _instantly_ and _spontaneously_ bond over something as simple as coffee lacks <Citation id="gorlenkoRemote" />. The lack of behavioural cues force us to rely on verbal communication mostly. I have personally observed that adjusting to this new reality is clearly more difficult to some than others.
 
 ### Remote Work Intensity
 
@@ -375,7 +391,56 @@ Ultimately, we have to recognize the differences remote work creates. Agile comp
 
 ## Conclusion
 
-I used to think the strongest argument the Agile manifesto poses is being ready to change. I do think however, that after my experience at Hyper Island and analysing modern businesses practices, this has changed a bit. Resilience to change is not a goal, but an outcome. Not only are modern businesses learning more iteratively than before. They have more effectively been able to connect knowledge throughout their organisation. This has empowered them to respond to change better.
+I used to think the strongest argument the Agile manifesto poses is being ready to change. I do think however, that after my experience at Hyper Island and analysing modern businesses practices, this has changed a bit. Resilience to change is not a goal, but an outcome. Not only are modern businesses learning more iteratively than before. They have more effectively been able to connect knowledge throughout their organisation. This has empowered businesses to respond to change better.
+
+---
+
+# Part 2: Team experiences
+
+The second part of this research activity is a group effort to reflect on our individual- and group experiences during the first three modules of our Hyper Island curriculum.
+
+<DownloadButton
+  file="/team-experiences.pdf"
+  icon={<MdPictureAsPdf />}
+  text="Download as PDF"
+  color="#FF3500"
+/>
+
+<DownloadButton
+  file="/team-experiences.key"
+  icon={<MdSlideshow />}
+  text="Download as Keynote"
+  color="#0070c9"
+/>
 
 :::
 
+::: div full-width
+
+<ImageCarousel
+  width={80}
+  imageArr={[
+    {
+      src: "/img/slides/team-experiences.001.png",
+    },
+    {
+      src: "/img/slides/team-experiences.002.png",
+    },
+    {
+      src: "/img/slides/team-experiences.003.png",
+    },
+    {
+      src: "/img/slides/team-experiences.004.png",
+    },
+    {
+      src: "/img/slides/team-experiences.005.png",
+    },
+    {
+      src: "/img/slides/team-experiences.006.png",
+    },
+    {
+      src: "/img/slides/team-experiences.007.png",
+    },
+  ]}
+/>
+:::
