@@ -198,6 +198,26 @@ const myReferences: AcademicRef[] = [
         "Smith, P.A.. and Sharma, M. (2002). Developing personal responsibility and leadership traits in all your employees: part 1 – shaping and harmonizing the high‐performance drivers. Management Decision, [online] 40(8), pp.764–774. Available at: https://www.deepdyve.com/lp/emerald-publishing/developing-personal-responsibility-and-leadership-traits-in-all-your-uVX8BixxJA.",
     },
   },
+  {
+    citationKey: "gorlenkoRemote",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Gorlenko",
+      year: "2005",
+      inBib:
+        "Gorlenko, L. (2005). Small world, water coolers, and the challenge of remote collaboration. interactions, 12(6), p.42.",
+    },
+  },
+  {
+    citationKey: "felsteadRemote",
+    entryType: "ACADEMIC",
+    entryTags: {
+      author: "Felstead and Henseke",
+      year: "2017",
+      inBib:
+        "Felstead, A. and Henseke, G. (2017). Assessing the growth of remote working and its consequences for effort, well-being and work-life balance. New Technology, Work and Employment, 32(3), pp.195–212.",
+    },
+  },
 ];
 
 export interface AcademicRef {
