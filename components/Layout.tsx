@@ -49,6 +49,22 @@ const Layout: React.FunctionComponent<Props> = ({
           rel="stylesheet"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        {/* Essential META Tags */}
+        <meta property="og:title" content="Managing Projects &amp; Teams" />
+        <meta
+          property="og:description"
+          content="How ideas and information disperse in an organisation"
+        />
+        <meta
+          property="og:image"
+          content="https://ra-projects-and-teams.nilswesthoff.com/img/social-image.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://ra-projects-and-teams.nilswesthoff.com"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       {/* <header>
         <Nav />
