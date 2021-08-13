@@ -12,7 +12,7 @@
     "@next/mdx": "^9.4.4",
     "heatmap.js": "^2.0.5",
     "isomorphic-unfetch": "3.0.0",
-    "next": "^9.4.0",
+    "next": "^11.1.0",
     "next-mdx-enhanced": "^3.0.0",
     "polished": "^3.6.3",
     "react": "^16.12.0",
